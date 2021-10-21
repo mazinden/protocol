@@ -19,16 +19,14 @@ These controllers have common parameters:
 * continuation - send this parameter to fetch next portion of data (you can find continuation value in the server response)
 * also they have different query parameters for each. Please, see [api-reference](https://api-reference.rarible.com)
 
-{% swagger baseUrl="http://api.rarible.com/protocol/v0.1/ethereum/nft/items/" path=":itemId/meta" method="get" summary="Item Metadata" %}
-{% swagger-description %}
+http://api.rarible.com/protocol/v0.1/ethereum/nft/items/
+
 Displays all item Metadata (Stored on IPFS)
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="itemId" type="string" %}
+
+
 The itemId is built by using collectionAddress:tokenId - An example is 0x60f80121c31a0d46b5279700f9df786054aa5ee5:21
-{% endswagger-parameter %}
 
-{% swagger-response status="200" description="" %}
 ```
 {
   "name": "string",
@@ -39,19 +37,14 @@ The itemId is built by using collectionAddress:tokenId - An example is 0x60f8012
   "attributes": {}
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
 
-{% swagger baseUrl="http://api.rarible.com/protocol/v0.1/ethereum/nft/items/" path=":itemId" method="get" summary="Item Data" %}
-{% swagger-description %}
+
+http://api.rarible.com/protocol/v0.1/ethereum/nft/items/
+
 Displays Item data such as Royalties, Unlockable content, etc.
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="itemId" type="string" %}
 The itemId is built by using collectionAddress:tokenId - An example is 0x60f80121c31a0d46b5279700f9df786054aa5ee5:21
-{% endswagger-parameter %}
 
-{% swagger-response status="200" description="" %}
 ```
 {
   "id": "string",
@@ -71,8 +64,6 @@ The itemId is built by using collectionAddress:tokenId - An example is 0x60f8012
   ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
 
 
 If you wish to build an order for an ERC1155, it is important you also record the amount returned by the query.
