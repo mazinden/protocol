@@ -68,9 +68,7 @@ Gets concatenated into the following upon minting:
 
 `ipfs://ipfs/QmWLsBu6nS4ovaHbGAXprD1qEssJu4r5taQfB74sCG51tp`
 
-{% hint style="info" %}
 If you are not storing your metadata on IPFS, you will need to create your own custom collection contract instead of using the protocol's asset contracts. See **Implementation** for details.
-{% endhint %}
 
 * **creators**
 
@@ -248,9 +246,7 @@ Get the `tokenId` from the response object.
 
 **Step 3**: Creator signs the provided typed data, thereby granting permission to mint their NFT upon purchase.
 
-{% hint style="info" %}
 See [EIP1271](../exchange/contract-wallets.md) for information on how smart contracts can interact with this order book.
-{% endhint %}
 
 **First**, construct the typed data structure:
 
@@ -449,11 +445,9 @@ struct Mint721Data {
 
 You can do so by instantiating the contract in your app and calling the function directly using `ethers.js` or `web3.js`.
 
-{% hint style="info" %}
 For the signature, since you are minting an NFT as a direct call and not a lazy mint, you simply pass an empty signature. E.g. `0x`.
 
 Royalties are set as basis point, so 1000 = 10%. [More info](https://corporatefinanceinstitute.com/resources/knowledge/finance/basis-point-beep/)
-{% endhint %}
 
 #### Example
 
@@ -521,9 +515,7 @@ Gets concatenated into the following upon minting:
 
 `ipfs://ipfs/QmWLsBu6nS4ovaHbGAXprD1qEssJu4r5taQfB74sCG51tp`
 
-{% hint style="info" %}
 If you are not storing your metadata on IPFS, you will need to create your own custom collection contract instead of using the protocol's asset contracts. See **Implementation** for details.
-{% endhint %}
 
 * **supply**
 
@@ -715,9 +707,7 @@ Get the `tokenId` from the response object.
 
 **Step 3**: Creator signs the provided typed data, thereby granting permission to mint their NFT upon purchase.
 
-{% hint style="info" %}
 See [Signatures](https://hackmd.io/ktJuljjGTA2TivezBXKA5g?view#Signatures) for more details on typed data and EIP-712 and EIP-1271.
-{% endhint %}
 
 **First**, construct the typed data structure:
 
@@ -921,11 +911,9 @@ struct Mint1155Data {
 
 You can do so by instantiating the contract in your app and calling the function directly using `ethers.js` or `web3.js`.
 
-{% hint style="info" %}
 For the signature, since you are minting an NFT as a direct call and not a lazy mint, you simply pass an empty signature. E.g. `0x`.
 
 Royalties are set as basis point, so 1000 = 10%. [More info](https://corporatefinanceinstitute.com/resources/knowledge/finance/basis-point-beep/)
-{% endhint %}
 
 #### Example
 
@@ -1079,8 +1067,6 @@ Similarly for lazy minting support, you will need to add a `mintAndTransfer` fun
 
 In many cases, it may be easier and faster to just [fork the protocol contracts](https://github.com/rariblecom/protocol-contracts/tree/57043e3f9e93223ef9d65dae351d3c55b34e5bf1/tokens) you wanted to use and change the `baseURI` and any other data upon deployment.
 
-{% hint style="info" %}
 You can supply your own `tokenId` instead of getting one from the API call used for Lazy Minting when rolling your own contracts, however, the token id needs to have the minter's address followed by 96 bits, which can include any number you want, in order to pass the `require` checks in the default `mintAndTransfer` function. Alternatively, you can still use the generate token id API used above to supply a tokenId for them.
-{% endhint %}
 
 **YAY! Your NFT is now minted! Visit the next section on** [**how to create a sell order**](../exchange/creating-a-sell-order.md) **or to check if your Asset is indexed you can** [**view this page**](https://github.com/rariblecom/protocol-documentation/tree/3f1c8c9f6c98ecb68caeab3c6778338ec28d979a/asset-discovery.md)**.**
