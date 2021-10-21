@@ -152,9 +152,9 @@ Any asset can be added
 * Check if the order is signed by its maker or maker of the order is executing the transaction.
 * If the maker of the order is a contract, then an ERC-1271 check is performed.
 
-{% hint style="info" %}
+
 Currently, only off-chain orders are supported, this part of the smart contract can be easily updated to support on-chain order books.
-{% endhint %}
+
 
 ## Order execution
 
@@ -163,18 +163,18 @@ Order execution is done by TransferManager. There are 2 variants:
 * SimpleTransferManager \(it simply transfers assets from maker to taker and vice versa\).
 * RaribleTransferManager \(sophisticated version, it takes into account protocol commissions, royalties, etc\).
 
-{% hint style="success" %}
+
 There are plans to extend RaribleTransferManager to support more royalty schemes and add new features like custom fees, multiple order beneficiaries.
-{% endhint %}
+
 
 This part of the algorithm can be extended with a custom ITransferExecutor. In the future, new executors will be added to support new asset types, for example, executor for handling bundles can be added.
 
-{% hint style="info" %}
+
 Possible improvements:
 
 * Support bundles.
 * Support random boxes.
-{% endhint %}
+
 
 ## Fees
 

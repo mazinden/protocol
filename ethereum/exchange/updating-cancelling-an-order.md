@@ -6,9 +6,9 @@ To update an order we need to make the changes and send a POST request to the AP
 
 New Orders check the Start, End, taker, make and value. If any of these are invalid you will receive a 400 response code from the API.
 
-{% hint style="danger" %}
+
 The price can only be lowered and not increased, to increase the price you will need to cancel the order and create a new one.
-{% endhint %}
+
 
 ## Canceling an Order
 

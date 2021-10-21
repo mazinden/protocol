@@ -2,9 +2,9 @@
 
 ## [Search Items](https://api-staging.rarible.com/protocol/ethereum/nft/indexer/v0.1/swagger/webjars/swagger-ui/index.html?configUrl=/protocol/ethereum/nft/indexer/v0.1/swagger/v3/api-docs/swagger-config#/item-controller/searchItems)
 
-{% hint style="info" %}
+
 In order to get latest information about API, please follow [OpenAPI doc](https://api-reference.rarible.com/#tag/item-controller) for item-controller part
-{% endhint %}
+
 
 There are some controllers to query items:
 
@@ -74,8 +74,8 @@ The itemId is built by using collectionAddress:tokenId - An example is 0x60f8012
 {% endswagger-response %}
 {% endswagger %}
 
-{% hint style="danger" %}
+
 If you wish to build an order for an ERC1155, it is important you also record the amount returned by the query.
-{% endhint %}
+
 
 **Visit the next section on** [**how to create a sell order**](../exchange/creating-a-sell-order.md)**!**

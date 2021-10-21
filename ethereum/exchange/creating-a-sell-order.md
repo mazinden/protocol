@@ -6,9 +6,7 @@
 
 We need to call approval on the transfer proxy contract.
 
-{% hint style="danger" %}
 The approval on the transfer proxy only needs to be called if a previous approval does not exist.
-{% endhint %}
 
 **Step 2. Creating signature**
 
@@ -164,6 +162,6 @@ Response
 }
 ```
 
-{% hint style="info" %}
+
 In order to get latest information about API, please follow [OpenAPI doc](https://api-reference.rarible.com/#operation/createOrUpdateOrder) for createOrUpdateOrder
-{% endhint %}
+
