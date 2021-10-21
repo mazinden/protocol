@@ -995,7 +995,7 @@ Now that we have our IPFS CID (Called hash here on out), we can begin constructi
 {
    "name": /* NFT Name - This must be a string */,
    "description": /* Description of the NFT - This must be a string */,
-   "image": /*  IPFS Hash to our content, this must be prefixed with "ipfs://ipfs/{{ IPFS_HASH ))" - This must be a string */,
+   "image": /*  IPFS Hash to our content, this must be prefixed with "ipfs://ipfs/{{ IPFS_HASH }}" - This must be a string */,
    "external_url": /* This is the link to Rarible which we currently don't have, we can fill this in shortly */,
    "animation_url": /* IPFS Hash just as image field, but it allows every type of multimedia files. Like mp3, mp4 etc */,
    // the below section is not needed.
