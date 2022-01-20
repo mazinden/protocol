@@ -38,9 +38,9 @@ Changes in the documentation will be displayed immediately.
 
 ## Deploying
 
-Push the changes to GitHub `main` branch. The site will be automatically built and deployed within a few minutes. 
+Merge pull requests or push changes to GitHub `main` branch. The site will be automatically built and deployed within a few minutes.
 
-You should never edit files in your pages repository by hand. Because you will lose your work the next time you pushing the changes.
+You should never edit files in your pages repository by hand. Because you will lose your work the next time you push the changes.
 
 ## Configuration
 
