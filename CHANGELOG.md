@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## v0.1.2 - 2022-01-24
+
+- no changes
+
 ## v0.1.1 - 2022-01-24
 
 - no changes
