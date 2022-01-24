@@ -78,7 +78,3 @@ Before submitting your PR, search GitHub for an open or closed PR related to you
 7. Keep an eye on the pull request
 
    There's a good chance we'll request a few changes to your pull requests once it's out, so keeping an eye on it will only make the merging process faster.
-
-test
-test
-test
